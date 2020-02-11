@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Unikali Foto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link href="themes/peach.css" rel="stylesheet">
+</head>
+
+<body style="background-color:black;">
+
+    <form class="form-inline">
+
+        <label for="year"></label><select class="form-control col-sm-6" name="year" id="year" onchange="jump()">
+
+            <option value=2019>2019</option>
+            <option value=2020>2020</option>
+            <option value=2021>2021</option>
+            <option value=2022>2022</option>
+            <option value=2023>2023</option>
+            <option value=2024>2024</option>
+            <option value=2025>2025</option>
+            <option value=2026>2026</option>
+            <option value=2027>2027</option>
+            <option value=2028>2028</option>
+            <option value=2029>2029</option>
+            <option value=2030>2030</option>
+        </select>
+        <!-- <label class="lead mr-2 ml-2" for="month">Jump To: </label> -->
+        <select class="form-control col-sm-6" name="month" id="month" onchange="jump()">
+            <option value=0>Sausis</option>
+            <option value=1>Vasaris</option>
+            <option value=2>Kovas</option>
+            <option value=3>Balandis</option>
+            <option value=4>Gegužė</option>
+            <option value=5>Birželis</option>
+            <option value=6>Liepa</option>
+            <option value=7>Rugpjūtis</option>
+            <option value=8>Rugsėjis</option>
+            <option value=9>Spalis</option>
+            <option value=10>Lapkritis</option>
+            <option value=11>Gruodis</option>
+
+        </select>
+
+    </form>
+    <div class="container  col-sm-12">
+        <div class="calendar-size">
+            <div class="card" style="background-color:black;">
+                <h3 class="card-header" id="monthAndYear"></h3>
+                <table class="table table-bordered table-responsive-sm" id="calendar">
+                    <thead>
+                        <tr>
+                            <th>Pirmadienis</th>
+                            <th>Antradienis</th>
+                            <th>Trečiadienis</th>
+                            <th>Ketvirtadienis</th>
+                            <th>Penktadienis</th>
+                            <th>Šeštadienis</th>
+                            <th>Sekmadienis</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="ItemEvents.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
